@@ -13,7 +13,7 @@ const App = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https:/stock-price-api.vercel.app/api/stock?symbol=${selectedStock}`
+          `https://stock-price-api.vercel.app/api/stock?symbol=${selectedStock}`
         );
         const data = await response.data;
       
